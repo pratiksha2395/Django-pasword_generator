@@ -1,0 +1,25 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<div class="container text-center">
+
+
+
+    <form action="{% url 'password' %}" style="border:1px solid black" >
+      <h1>Password generator</h1>
+      Length <select  name="length">
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="12" selected="selected">12</option>
+          <option value="15">15</option>
+      </select> <br>
+      Uppercase <input type="checkbox" name="uppercase"><br>
+      Special charecters <input type="checkbox" name="sprecial_char"><br>
+      Numbers <input type="checkbox" name="numbers"><br>
+      <input type="submit" value="Generate pasword" class="btn btn-warning"><br>
+      <a href="{% url 'about' %}">About US</a>
+    </form>
+
+
+</div>
